@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#efd6bf" />
+    <meta name="description" content="Te invito a celebrar mis XV el sábado 9 de enero en Puro Pilar. ¡Me encantaría que estés! ✨" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:site_name" content="Mis XV · Ámbar" />
+    <meta property="og:title" content="Mis XV · Ámbar" />
+    <meta property="og:description" content="Te invito a celebrar mis XV el sábado 9 de enero en Puro Pilar. ¡Me encantaría que estés! ✨" />
+    <meta property="og:image" content="assets/whatsapp-ambar.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Mis XV · Ámbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@500;600&display=swap"
+    />
+    <link rel="preload" as="image" href="assets/portada.webp" fetchpriority="high" />
+    <link rel="stylesheet" href="styles.css?v=11" />
+  </head>
+  <body>
+    <main class="invitation" id="invitation" aria-label="Invitación a los XV de Ámbar">
+      <section class="panel panel--cover" aria-labelledby="cover-title" style="--bg: url(assets/portada.webp)">
+        <div class="panel__stage">
+          <h1 id="cover-title" class="sr-only">Mis XV, Ámbar</h1>
+          <img src="assets/portada.webp" alt="Mis XV. Ámbar, en letras doradas, con una flor de lis marfil" width="941" height="1672" fetchpriority="high" />
+          <span class="cover__shine" aria-hidden="true"></span>
+          <div class="sparkles" aria-hidden="true">
+            <i style="--x: 18%; --y: 58%; --d: 0s"></i>
+            <i style="--x: 82%; --y: 44%; --d: 1.2s"></i>
+            <i style="--x: 30%; --y: 34%; --d: 2.1s"></i>
+            <i style="--x: 70%; --y: 66%; --d: 0.6s"></i>
+            <i style="--x: 50%; --y: 30%; --d: 2.8s"></i>
+            <i style="--x: 12%; --y: 76%; --d: 1.7s"></i>
+            <i style="--x: 88%; --y: 22%; --d: 3.3s"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel--guests reveal" aria-labelledby="guests-title" style="--bg: url(assets/invitados.webp)">
+        <div class="panel__stage">
+          <h2 id="guests-title" class="sr-only">Esta invitación es para</h2>
+          <img src="assets/invitados.webp" alt="" width="941" height="1672" loading="lazy" />
+          <p class="guest-name" id="nombres-invitados"></p>
+          <p class="guest-places" id="cantidad-lugares"></p>
+        </div>
+      </section>
+
+      <section class="panel panel--countdown reveal" aria-labelledby="countdown-title" style="--bg: url(assets/cuenta-regresiva.webp)">
+        <div class="panel__stage">
+          <h2 id="countdown-title" class="sr-only">Faltan para mis XV</h2>
+          <img src="assets/cuenta-regresiva.webp" alt="" width="941" height="1672" loading="lazy" />
+          <div class="countdown" role="timer" aria-label="Tiempo restante para la fiesta">
+            <div class="countdown__unit"><span class="countdown__value" id="cdDays">00</span><span class="countdown__label">DÍAS</span></div>
+            <div class="countdown__unit"><span class="countdown__value" id="cdHours">00</span><span class="countdown__label">HORAS</span></div>
+            <div class="countdown__unit"><span class="countdown__value" id="cdMinutes">00</span><span class="countdown__label">MINUTOS</span></div>
+            <div class="countdown__unit"><span class="countdown__value" id="cdSeconds">00</span><span class="countdown__label">SEGUNDOS</span></div>
+          </div>
+          <p class="countdown__caption">para mis XV</p>
+        </div>
+      </section>
+
+      <section class="panel panel--date" id="datePanel" aria-labelledby="date-title" style="--bg: url(assets/fecha-hora.webp)">
+        <div class="panel__stage">
+          <h2 id="date-title" class="sr-only">Fecha y hora</h2>
+          <img src="assets/fecha-hora.webp" alt="Sábado 09 de enero, de 21:00 a 05:00 horas" width="941" height="1672" loading="lazy" />
+          <a
+            class="hotspot hotspot--calendar"
+            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Mis%20XV%20%C2%B7%20%C3%81mbar&dates=20270110T000000Z/20270110T080000Z&details=%C2%A1Te%20espero%20para%20celebrar%20mis%20XV!&location=Puro%20Pilar"
+            target="_blank"
+            rel="noreferrer"
+          ><span class="sr-only">Agregar al calendario</span></a>
+        </div>
+      </section>
+
+      <section class="panel panel--map reveal" aria-labelledby="map-title" style="--bg: url(assets/como-llegar.webp)">
+        <div class="panel__stage">
+          <h2 id="map-title" class="sr-only">Cómo llegar</h2>
+          <img src="assets/como-llegar.webp" alt="Cómo llegar. Puro Pilar. Te esperamos" width="941" height="1672" loading="lazy" />
+          <a class="hotspot hotspot--map" href="https://maps.app.goo.gl/vffwZ1bULpSxEnmn6?g_st=iw" target="_blank" rel="noreferrer">
+            <span class="sr-only">Ver ubicación en Google Maps</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="panel panel--dress reveal" aria-labelledby="dress-title" style="--bg: url(assets/dress-code.webp)">
+        <div class="panel__stage">
+          <h2 id="dress-title" class="sr-only">Dress code</h2>
+          <img src="assets/dress-code.webp" alt="Dress code elegante" width="941" height="1672" loading="lazy" />
+        </div>
+      </section>
+
+      <!-- Regalos: primero el sobre cerrado; al tocar la perla se abre y aparece la tarjeta -->
+      <section class="panel panel--gifts reveal" id="giftsPanel" aria-labelledby="gifts-title" style="--bg: url(assets/sobre.webp)">
+        <div class="panel__stage">
+          <h2 id="gifts-title" class="sr-only">Regalos</h2>
+          <img
+            class="gifts__open"
+            src="assets/regalos.webp"
+            alt="Regalos. Lo más lindo es compartir este momento con vos. Si querés hacerme un regalo, acá encontrarás los datos"
+            width="941"
+            height="1672"
+            loading="lazy"
+          />
+          <img class="gifts__closed" src="assets/sobre.webp" alt="Sobre cerrado con una perla. Tocá la perla" width="941" height="1672" loading="lazy" />
+          <span class="gifts__flash" aria-hidden="true"></span>
+          <button class="gifts__pearl" id="openEnvelope" type="button" aria-label="Tocá la perla para abrir el sobre">
+            <span class="gifts__ring"></span>
+            <span class="gifts__ring gifts__ring--late"></span>
+          </button>
+          <button class="hotspot hotspot--gifts" id="openGifts" type="button" tabindex="-1"><span class="sr-only">Ver datos</span></button>
+        </div>
+      </section>
+
+      <section class="panel panel--music panel--wide reveal" aria-labelledby="music-title" style="--bg: url(assets/musica-alta.webp)">
+        <div class="panel__stage">
+          <h2 id="music-title" class="sr-only">Música</h2>
+          <img src="assets/musica-alta.webp" alt="Música. Ayudame a armar la playlist de esa noche" width="1024" height="2048" loading="lazy" />
+          <!-- Los auriculares laten como parlantes: cada almohadilla es una copia recortada de la pieza -->
+          <div class="speaker" aria-hidden="true">
+            <span class="speaker__wave speaker__wave--left"></span>
+            <span class="speaker__wave speaker__wave--left speaker__wave--echo"></span>
+            <span class="speaker__wave speaker__wave--right"></span>
+            <span class="speaker__wave speaker__wave--right speaker__wave--echo"></span>
+            <img class="speaker__cup speaker__cup--left" src="assets/musica-alta.webp" alt="" width="1024" height="2048" loading="lazy" />
+            <img class="speaker__cup speaker__cup--right" src="assets/musica-alta.webp" alt="" width="1024" height="2048" loading="lazy" />
+            <i class="speaker__note" style="--x: 22%; --y: 59%; --d: 0s">♪</i>
+            <i class="speaker__note" style="--x: 80%; --y: 56%; --d: 1.3s">♫</i>
+            <i class="speaker__note" style="--x: 48%; --y: 62%; --d: 2.4s">♪</i>
+          </div>
+          <a
+            class="hotspot hotspot--music"
+            id="musicLink"
+            href="https://open.spotify.com/playlist/00RZschF4jOWyaWy9GUDXy?si=SmWrznDxTICOwW6DqyinBw&amp;pt=c5bacecad56c23829c711bd3bb97d717&amp;pi=XnvnbSrSRd2sw"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="sr-only">Sumar canción</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="panel panel--rsvp panel--wide reveal" aria-labelledby="rsvp-title" style="--bg: url(assets/confirmacion-alta.webp)">
+        <div class="panel__stage">
+          <h2 id="rsvp-title" class="sr-only">Confirmá tu asistencia</h2>
+          <img src="assets/confirmacion-alta.webp" alt="RSVP. Confirmá tu asistencia. Quiero compartir esta noche con vos" width="1024" height="2048" loading="lazy" />
+          <a class="hotspot hotspot--rsvp" id="boton-confirmar" href="#" data-pending="Para confirmar, abrí el link personalizado que te enviaron">
+            <span class="sr-only">Confirmar asistencia</span>
+          </a>
+          <p class="rsvp-deadline">
+            <span class="rsvp-deadline__line" aria-hidden="true"></span>
+            Confirmá antes del <strong>20 de diciembre</strong>
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer" aria-label="BloomDate y redes sociales">
+        <div class="footer__art">
+          <img src="assets/footer-bloomdate.webp?v=3" alt="Hecho con amor por BloomDate" width="1700" height="670" loading="lazy" />
+          <a class="footer-link footer-link--whatsapp" href="https://wa.me/541140436324" target="_blank" rel="noreferrer" aria-label="WhatsApp de BloomDate"></a>
+          <a class="footer-link footer-link--instagram" href="https://www.instagram.com/bloomdate.invitaciones/" target="_blank" rel="noreferrer" aria-label="Instagram de BloomDate"></a>
+          <a class="footer-link footer-link--website" href="https://bloomdate-site.netlify.app/" target="_blank" rel="noreferrer" aria-label="Sitio web de BloomDate"></a>
+        </div>
+      </footer>
+
+    <button class="audio-toggle" id="audioToggle" type="button" aria-label="Reproducir música" aria-pressed="false">
+      <span class="audio-toggle__ring" aria-hidden="true"></span>
+      <svg class="audio-toggle__icon audio-toggle__icon--play" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V6l10-2v12" /><circle cx="6.5" cy="18" r="2.5" /><circle cx="16.5" cy="16" r="2.5" /></svg>
+      <span class="audio-toggle__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    </button>
+    <audio id="invitationAudio" src="assets/musica.m4a?v=1" loop preload="auto"></audio>
+    </main>
+
+    <!-- Raspadita: al llegar a la fecha se cubre con una lámina dorada para descubrirla con el dedo -->
+    <div class="date-gate" id="dateGate" hidden>
+      <div class="date-gate__frame" style="--bg: url(assets/fecha-hora.webp)">
+        <div class="panel__stage">
+          <img src="assets/fecha-hora.webp" alt="Sábado 09 de enero, de 21:00 a 05:00 horas" width="941" height="1672" />
+        </div>
+        <canvas class="date-gate__canvas" id="revealCanvas" aria-label="Pasá el dedo para descubrir la fecha"></canvas>
+        <div class="magic-trail" id="magicTrail" aria-hidden="true"></div>
+        <div class="reveal-guide" aria-hidden="true">
+          <span class="reveal-guide__pearl"></span>
+          <strong>HAY UNA FECHA POR DESCUBRIR</strong>
+          <span>Pasá tu dedo sobre la pantalla</span>
+          <div class="finger-demo"><b>☝</b><i></i></div>
+        </div>
+        <button id="revealSkip" class="reveal-skip" type="button">REVELAR FECHA</button>
+      </div>
+    </div>
+
+    <dialog class="gift-modal" id="giftModal" aria-labelledby="giftTitle">
+      <div class="gift-card">
+        <button class="gift-card__close" type="button" data-close aria-label="Cerrar">✕</button>
+        <span class="gift-card__pearl" aria-hidden="true"></span>
+        <h3 class="gift-card__title" id="giftTitle">Datos para transferir</h3>
+        <p class="gift-card__bank">Banco Santander</p>
+        <span class="gift-card__line" aria-hidden="true"></span>
+
+        <dl class="gift-card__data">
+          <div class="gift-row">
+            <dt>Alias</dt>
+            <dd>ambar.fredes</dd>
+            <button type="button" class="copy-btn" data-copy="ambar.fredes" data-msg="Alias copiado">Copiar</button>
+          </div>
+          <div class="gift-row">
+            <dt>CBU</dt>
+            <dd>0720088530000004706301</dd>
+            <button type="button" class="copy-btn" data-copy="0720088530000004706301" data-msg="CBU copiado">Copiar</button>
+          </div>
+          <div class="gift-row gift-row--plain">
+            <dt>Titular</dt>
+            <dd>Ámbar Fredes</dd>
+          </div>
+          <div class="gift-row gift-row--plain">
+            <dt>Cuenta</dt>
+            <dd>Caja de ahorro en pesos<br />N.º 088-047063/0</dd>
+          </div>
+        </dl>
+        <p class="gift-card__thanks">¡Gracias por ser parte!</p>
+      </div>
+    </dialog>
+
+    <p class="toast" id="toast" role="status" aria-live="polite"></p>
+
+    <script src="script.js?v=5"></script>
+    <script src="assets/invitation-personalization.js?v=1"></script>
+  </body>
+</html>
